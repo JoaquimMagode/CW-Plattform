@@ -3,10 +3,7 @@ import { Page, Text, View, Document, StyleSheet, Font, Image } from '@react-pdf/
 import { CVData } from '../../lib/types';
 import { Translations } from '../../lib/translations';
 
-Font.register({
-    family: 'Oswald',
-    src: 'https://fonts.gstatic.com/s/oswald/v49/TK3iWkUHHAIjg75oxkjfq20.ttf'
-});
+
 
 const styles = StyleSheet.create({
     page: {
@@ -32,7 +29,7 @@ const styles = StyleSheet.create({
         objectFit: 'cover',
     },
     name: {
-        fontFamily: 'Oswald',
+        fontFamily: 'Helvetica-Bold',
         fontSize: 32,
         color: '#1a1a1a',
         marginBottom: 5,
@@ -47,7 +44,7 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
     },
     sectionTitleLeft: {
-        fontFamily: 'Oswald',
+        fontFamily: 'Helvetica-Bold',
         fontSize: 14,
         color: '#FFFFFF',
         marginBottom: 15,
@@ -58,7 +55,7 @@ const styles = StyleSheet.create({
         paddingBottom: 5,
     },
     sectionTitleRight: {
-        fontFamily: 'Oswald',
+        fontFamily: 'Helvetica-Bold',
         fontSize: 16,
         color: '#1a1a1a',
         marginBottom: 20,

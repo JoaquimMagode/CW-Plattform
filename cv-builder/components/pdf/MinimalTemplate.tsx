@@ -3,19 +3,13 @@ import { Page, Text, View, Document, StyleSheet, Font } from '@react-pdf/rendere
 import { CVData } from '../../lib/types';
 import { Translations } from '../../lib/translations';
 
-Font.register({
-    family: 'Inter',
-    fonts: [
-        { src: 'https://fonts.gstatic.com/s/inter/v12/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyfAZ9hjp-Ek-_EeA.ttf' },
-        { src: 'https://fonts.gstatic.com/s/inter/v12/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuGKYAZ9hjp-Ek-_EeA.ttf', fontWeight: 'bold' },
-    ]
-});
+
 
 const styles = StyleSheet.create({
     page: {
         padding: 50,
         backgroundColor: '#FFFFFF',
-        fontFamily: 'Inter',
+        fontFamily: 'Helvetica',
     },
     header: {
         marginBottom: 30,

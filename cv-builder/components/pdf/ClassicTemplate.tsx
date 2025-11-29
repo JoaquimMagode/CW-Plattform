@@ -3,10 +3,7 @@ import { Page, Text, View, Document, StyleSheet, Font } from '@react-pdf/rendere
 import { CVData } from '../../lib/types';
 import { Translations } from '../../lib/translations';
 
-Font.register({
-    family: 'Times-Roman',
-    src: 'https://fonts.gstatic.com/s/timesnewroman/v12/TimesNewRoman.ttf'
-});
+
 
 const styles = StyleSheet.create({
     page: {

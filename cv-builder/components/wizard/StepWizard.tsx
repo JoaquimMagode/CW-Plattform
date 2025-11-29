@@ -5,6 +5,7 @@ import { ChevronLeft, ChevronRight, Download, Loader2 } from 'lucide-react';
 import { useCVContext } from '@/lib/context/CVContext';
 import { useLanguage } from '@/lib/context/LanguageContext';
 import { generatePDF } from '@/lib/utils/generatePDF';
+import { generateSimplePDF } from '@/lib/utils/generateSimplePDF';
 import TemplateSelector from '../steps/TemplateSelector';
 import PersonalInfo from '../steps/PersonalInfo';
 import Summary from '../steps/Summary';
@@ -52,9 +53,11 @@ export default function StepWizard({ onBack }: StepWizardProps) {
     const handleDownload = async () => {
         setIsGenerating(true);
         try {
-            await generatePDF(cvData, t.lang as 'en' | 'pt');
+            await generatePDF(cvData, 'en');
         } catch (error) {
             console.error('Failed to generate PDF:', error);
+            // Fallback to simple PDF
+            generateSimplePDF(cvData);
         } finally {
             setIsGenerating(false);
         }

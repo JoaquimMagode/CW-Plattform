@@ -4,7 +4,8 @@ import { translations } from '../translations';
 
 export async function generatePDF(cvData: CVData, language: 'en' | 'pt') {
     try {
-        const { pdf } = await import('@react-pdf/renderer');
+        const ReactPDF = await import('@react-pdf/renderer');
+        const pdf = ReactPDF.pdf;
         const ModernTemplate = (await import('@/components/pdf/ModernTemplate')).default;
         const ClassicTemplate = (await import('@/components/pdf/ClassicTemplate')).default;
         const MinimalTemplate = (await import('@/components/pdf/MinimalTemplate')).default;

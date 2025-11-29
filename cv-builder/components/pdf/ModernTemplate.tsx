@@ -4,19 +4,13 @@ import { CVData } from '../../lib/types';
 import { Translations } from '../../lib/translations';
 // Removed translations import
 
-Font.register({
-    family: 'Inter',
-    fonts: [
-        { src: 'https://fonts.gstatic.com/s/inter/v12/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyfAZ9hjp-Ek-_EeA.ttf' },
-        { src: 'https://fonts.gstatic.com/s/inter/v12/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuGKYAZ9hjp-Ek-_EeA.ttf', fontWeight: 'bold' },
-    ]
-});
+
 
 const styles = StyleSheet.create({
     page: {
         flexDirection: 'row',
         backgroundColor: '#FFFFFF',
-        fontFamily: 'Inter',
+        fontFamily: 'Helvetica',
     },
     sidebar: {
         width: '35%',
