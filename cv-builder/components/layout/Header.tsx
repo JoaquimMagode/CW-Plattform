@@ -21,7 +21,7 @@ export default function Header() {
                             className="object-contain"
                         />
                     </div>
-                    <span className="font-bold text-xl text-gray-900">CV Builder Something</span>
+                    <span className="font-bold text-xl text-gray-900">CV Builder Construtor</span>
                 </div>
 
                 {/* Language Selector */}
